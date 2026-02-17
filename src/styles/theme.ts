@@ -1,4 +1,6 @@
-export const lightTheme: Theme = {
+import type { DefaultTheme } from "styled-components";
+
+export const lightTheme: DefaultTheme = {
     colors: {
         primary: '#6366F1',
         purple: '#A855F7',
@@ -14,7 +16,7 @@ export const lightTheme: Theme = {
     },
 } as const;
 
-export const darkTheme: Theme = {
+export const darkTheme: DefaultTheme = {
     colors: {
         primary: '#6366F1',
         purple: '#A855F7',
@@ -29,19 +31,3 @@ export const darkTheme: Theme = {
         border: '#334155',
     },
 } as const;
-
-export type Theme = {
-    colors: {
-        primary: string;
-        purple: string;
-        green: string;
-        red: string;
-        orange: string;
-        bg: string;
-        sidebar: string;
-        card: string;
-        text: string;
-        textLight: string;
-        border: string;
-    }
-}

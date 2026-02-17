@@ -1,13 +1,5 @@
-import styled from "styled-components";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Line, LineChart } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { Card } from "../components/UI/Card";
-
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-// `;
 
 const cashFlowData = [
   { month: "Nov 2025", income: 26000, expense: 15962, net: 10037 },

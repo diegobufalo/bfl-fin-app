@@ -1,12 +1,5 @@
-import styled from "styled-components";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { Card } from "../components/UI/Card";
-
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-// `;
 
 const categoryData = [
   { name: "Moradia", value: 1500, color: "#F97316" },

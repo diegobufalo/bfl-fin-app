@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { X } from "lucide-react";
-import { useTransactions } from "../contexts/TransactionContext";
+import { useTransactions } from "../contexts/types";
 
 const Overlay = styled.div`
   position: fixed;

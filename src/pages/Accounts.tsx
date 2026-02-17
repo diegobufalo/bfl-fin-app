@@ -1,12 +1,4 @@
-import styled from "styled-components";
 import { Card } from "../components/UI/Card";
-
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-//   margin-bottom: 24px;
-// `;
 
 const Accounts = () => {
   return (

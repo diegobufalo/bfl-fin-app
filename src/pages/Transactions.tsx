@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Search } from "lucide-react";
 import { useState } from "react";
 import NewTransactionModal from "../components/NewTransactionModal";
-import { useTransactions } from "../contexts/TransactionContext";
+import { useTransactions } from "../contexts/types";
 
 const Table = styled.table`
   width: 100%;

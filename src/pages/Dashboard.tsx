@@ -1,15 +1,7 @@
 import { TrendingUp } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { Card } from "../components/UI/Card";
-import { useAuth } from "../contexts/AuthContext";
-
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-//   margin-bottom: 24px;
-// `;
+import { useAuth } from "../contexts/types";
 
 const data = [
   { day: "1", este: 1200, passado: 800 },

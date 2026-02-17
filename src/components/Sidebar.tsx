@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { Sun, Moon } from "lucide-react";
-import { useTheme } from "../contexts/ThemeContext";
 
 import styled from "styled-components";
 import {
@@ -15,7 +14,7 @@ import {
   HelpCircle,
   Settings,
 } from "lucide-react";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth, useTheme } from "../contexts/types";
 
 const SidebarContainer = styled.aside<{ mobileOpen: boolean }>`
   width: 280px;

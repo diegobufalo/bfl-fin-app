@@ -1,12 +1,6 @@
 import { Card } from "../components/UI/Card";
 import type { RecurringItem } from "../types";
 
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-// `;
-
 const mockRecurrents: RecurringItem[] = [
   { name: "Google One", icon: "🔵", amount: 6.99, dueDate: "QUA, JAN 7" },
   { name: "iCloud", icon: "☁️", amount: 3.5, dueDate: "QUI, JAN 15" },

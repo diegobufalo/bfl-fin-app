@@ -1,12 +1,5 @@
-import styled from "styled-components";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { Card } from "../components/UI/Card";
-
-// const Card = styled.div`
-//   background: white;
-//   border-radius: 16px;
-//   padding: 24px;
-// `;
 
 const netWorthData = [
   { date: "28/12", value: 19500 },
