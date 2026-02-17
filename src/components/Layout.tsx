@@ -13,7 +13,7 @@ const Container = styled.div`
 const Main = styled.main`
   flex: 1;
   padding: 24px;
-  margin-left: 280px;
+  margin-left: 315px;
   transition: margin-left 0.3s;
 
   @media (max-width: 1024px) {

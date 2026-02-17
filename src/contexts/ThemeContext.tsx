@@ -5,7 +5,7 @@ import { ThemeContext } from "./types";
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem("bflfin-theme");
-    return saved ? saved === "dark" : false; // começa claro
+    return saved ? saved === "dark" : false;
   });
 
   const theme = isDark ? darkTheme : lightTheme;
@@ -18,7 +18,6 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     });
   };
 
-  // aplica no <html> para estilos globais
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);

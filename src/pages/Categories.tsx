@@ -1,5 +1,6 @@
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, ResponsiveContainer, Sector, LabelList, type LabelProps, Label } from "recharts";
 import { Card } from "../components/UI/Card";
+import { Container } from "./styles/categories";
 
 const categoryData = [
   { name: "Moradia", value: 1500, color: "#F97316" },
@@ -8,25 +9,38 @@ const categoryData = [
 ];
 
 const Categories = () => {
+  const MyCustomLabel = (props: LabelProps) => <Label {...props} fill={props.color} position="outside" offset={10} />;
+
   return (
-    <>
+    <Container>
       <h1>📂 Categorias</h1>
       <Card>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ fontSize: "42px", fontWeight: 700 }}>R$ 2.815,05</div>
-          <div>spent in Janeiro de 2026</div>
+        <div className="category-resume">
+          <div className="category-balance">R$ 2.815,05</div>
+          <div className="resume-date">spent in Janeiro de 2026</div>
         </div>
-        <ResponsiveContainer width="100%" height={200}>
+        <ResponsiveContainer width="100%" height={300}>
           <PieChart>
-            <Pie data={categoryData} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={90}>
-              {categoryData.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry.color} />
-              ))}
+            <Pie
+              data={categoryData}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              innerRadius={60}
+              outerRadius={90}
+              shape={(props) => {
+                const { payload } = props; // payload = your data entry
+                const fill = payload?.color ?? "#8884d8";
+                return <Sector {...props} fill={fill} />;
+              }}
+            >
+              <LabelList dataKey="name" content={MyCustomLabel} />
             </Pie>
           </PieChart>
         </ResponsiveContainer>
       </Card>
-    </>
+    </Container>
   );
 };
 

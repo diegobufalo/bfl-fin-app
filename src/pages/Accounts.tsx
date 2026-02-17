@@ -1,18 +1,19 @@
 import { Card } from "../components/UI/Card";
+import { Container } from "./styles/accounts";
 
 const Accounts = () => {
   return (
-    <>
+    <Container>
       <h1>🏦 Contas</h1>
       <Card>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className="balance-resume">
           <div>
             <div>Ativos</div>
-            <div style={{ fontSize: "32px", fontWeight: 700 }}>R$ 4.500,00</div>
+            <div className="balance">R$ 4.500,00</div>
           </div>
           <div>
             <div>Dívidas</div>
-            <div style={{ fontSize: "32px", fontWeight: 700 }}>R$ 0,00</div>
+            <div className="balance">R$ 0,00</div>
           </div>
         </div>
       </Card>
@@ -26,7 +27,7 @@ const Accounts = () => {
         <h3>Contas Bancárias</h3>
         <p>Nubank Conta • R$ 4.500,00</p>
       </Card>
-    </>
+    </Container>
   );
 };
 

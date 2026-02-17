@@ -6,7 +6,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
 
   const login = (email: string, password: string): boolean => {
-    // Credenciais fake (pode mudar)
     if (email === "diego@fin.com" && password === "123123") {
       setUser({ name: "Diego", email });
       return true;

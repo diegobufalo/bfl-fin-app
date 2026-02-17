@@ -76,12 +76,12 @@ const Sidebar = ({ mobileOpen, setMobileOpen }: SidebarProps) => {
   const menu = [
     { to: "/", icon: Home, label: "Dashboard" },
     { to: "/transactions", icon: CreditCard, label: "Transações" },
-    { to: "/cashflow", icon: TrendingUp, label: "Fluxo de Caixa" },
+    // { to: "/cashflow", icon: TrendingUp, label: "Fluxo de Caixa" },
     { to: "/accounts", icon: Building2, label: "Contas" },
-    { to: "/networth", icon: PieChart, label: "Patrimônio" },
+    // { to: "/networth", icon: PieChart, label: "Patrimônio" },
     { to: "/recurrents", icon: Repeat, label: "Recorrentes" },
     { to: "/categories", icon: FolderOpen, label: "Categorias" },
-    { to: "/reports", icon: FileText, label: "Relatórios" },
+    // { to: "/reports", icon: FileText, label: "Relatórios" },
   ];
 
   return (
@@ -93,14 +93,14 @@ const Sidebar = ({ mobileOpen, setMobileOpen }: SidebarProps) => {
           {item.label}
         </MenuItem>
       ))}
-      <div style={{ marginTop: "auto", paddingTop: "40px" }}>
+      {/* <div style={{ marginTop: "auto", paddingTop: "40px" }}>
         <MenuItem to="#" style={{ color: "#64748B" }}>
           <HelpCircle size={20} /> Suporte
         </MenuItem>
         <MenuItem to="#" style={{ color: "#64748B" }}>
           <Settings size={20} /> Configurações
         </MenuItem>
-      </div>
+      </div> */}
       <MenuItem
         to={""}
         as="button"
